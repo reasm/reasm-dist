@@ -1,0 +1,20 @@
+[submodule "fragag-commons"]
+	path = fragag-commons
+	url = git@github.com:FraGag/fragag-commons.git
+	branch = master
+[submodule "fragag-test-helpers"]
+	path = fragag-test-helpers
+	url = git@github.com:FraGag/fragag-test-helpers.git
+	branch = master
+[submodule "reasm-core"]
+	path = reasm-core
+	url = git@github.com:reasm/reasm-core.git
+	branch = master
+[submodule "reasm-m68k"]
+	path = reasm-m68k
+	url = git@github.com:reasm/reasm-m68k.git
+	branch = master
+[submodule "reasm-batch"]
+	path = reasm-batch
+	url = git@github.com:reasm/reasm-batch.git
+	branch = master
