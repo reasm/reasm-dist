@@ -8,11 +8,9 @@ The following programs are required to run **build.bash**:
 
 * bash
 * git
-* mail
 * mvn
 * scp
 * tar (GNU)
 * xz
 
-This script is designed to be run unattended. Errors are sent by email. Run the
-script with `bash build.bash`.
+This script is designed to be run manually.

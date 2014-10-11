@@ -1,12 +1,6 @@
 #!/bin/bash -Eu
 
-output='failed'
 declare -a projects=(fragag-commons fragag-test-helpers reasm-core reasm-m68k reasm-batch)
-
-error() {
-  echo -n "$output" |
-    mail -s "Failed to deploy reasm" reasm@localhost
-}
 
 install() {
   echo "Installing $1" &&
@@ -53,8 +47,7 @@ publish_sources() {
 }
 
 publish_self() {
-  echo "Committing changes to reasm-dist" &&
-  git commit -am 'Update submodules' &&
+  echo "Pushing reasm-dist" &&
   git push &&
   echo
 }
@@ -81,6 +74,5 @@ run() {
 }
 
 set -o pipefail
-trap error ERR
 
-output=$(run 2>&1)
+run
