@@ -28,7 +28,7 @@ package_dist() {
   cp reasm-batch/target/reasm-batch-*-jar-with-dependencies.jar dist/reasm.jar &&
   cp $(git ls-files src) dist/ &&
   cd ./dist &&
-  tar --create --file=reasm.tar.xz --xz --exclude=reasm.tar.xz . &&
+  tar --create --file=reasm.tar.xz --xz --exclude=reasm.tar.xz * &&
   cd .. &&
   echo
 }
