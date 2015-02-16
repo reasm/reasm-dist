@@ -1,6 +1,6 @@
 #!/bin/bash -Eu
 
-declare -a projects=(fragag-commons fragag-test-helpers reasm-core reasm-m68k reasm-batch)
+declare -a projects=(fragag-commons fragag-test-helpers reasm-core reasm-commons reasm-m68k reasm-batch)
 
 install() {
   echo "Installing $1" &&

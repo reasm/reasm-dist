@@ -10,6 +10,10 @@
 	path = reasm-core
 	url = git@github.com:reasm/reasm-core.git
 	branch = master
+[submodule "reasm-commons"]
+	path = reasm-commons
+	url = git@github.com:reasm/reasm-commons.git
+	branch = master
 [submodule "reasm-m68k"]
 	path = reasm-m68k
 	url = git@github.com:reasm/reasm-m68k.git
