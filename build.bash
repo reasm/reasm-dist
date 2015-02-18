@@ -1,6 +1,6 @@
 #!/bin/bash -Eu
 
-declare -a projects=(fragag-commons fragag-test-helpers reasm-core reasm-commons reasm-m68k reasm-batch)
+declare -a projects=(fragag-commons fragag-test-helpers reasm-core reasm-commons reasm-m68k reasm-z80 reasm-batch)
 
 install() {
   echo "Installing $1" &&
@@ -25,10 +25,10 @@ package_dist() {
   echo "Packaging reasm distribution" &&
   rm -rf dist &&
   mkdir dist &&
-  cp reasm-batch/target/reasm-batch-*-jar-with-dependencies.jar dist/reasm.jar &&
+  cp reasm-batch/target/reasm-batch-*.jar dist/reasm.jar &&
   cp $(git ls-files src) dist/ &&
   cd ./dist &&
-  tar --create --file=reasm.tar.xz --xz --exclude=reasm.tar.xz * &&
+  tar --create --file=reasm.tar.xz --xz * &&
   cd .. &&
   echo
 }

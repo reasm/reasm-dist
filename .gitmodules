@@ -18,6 +18,10 @@
 	path = reasm-m68k
 	url = git@github.com:reasm/reasm-m68k.git
 	branch = master
+[submodule "reasm-z80"]
+	path = reasm-z80
+	url = git@github.com:reasm/reasm-z80.git
+	branch = master
 [submodule "reasm-batch"]
 	path = reasm-batch
 	url = git@github.com:reasm/reasm-batch.git
