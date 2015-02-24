@@ -7,7 +7,7 @@ install() {
   cd "./$1" && # './' bypasses CDPATH
   git reset --hard &&
   git clean -dfx &&
-  mvn install &&
+  mvn clean install &&
   cd .. &&
   echo
 }
