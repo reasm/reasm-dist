@@ -5,7 +5,7 @@ standard distribution for **reasm**. The `src` directory contains additional
 files that are included in the distribution.
 
 You can download the latest binary reasm distribution at
-http://files.fragag.ca/public/reasm.tar.xz.
+https://files.fragag.ca/public/reasm.tar.xz.
 
 The following programs are required to run **build.bash**:
 
